@@ -18,6 +18,9 @@ public class Main3 {
         System.out.println(k2.pole);
         System.out.println(k2.obw);
 
+        k1.uzupelnijDane(3);
+        k2.uzupelnijDane(5);
+        Kwadrat kopia = k1.copy();
         System.out.println(k1 == k2);
 
         Kwadrat k3 = new Kwadrat(5);

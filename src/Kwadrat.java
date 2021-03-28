@@ -3,10 +3,10 @@ public class Kwadrat {
     int pole;
     int obw;
 
-    Kwadrat(int a) {
-        bok = a;
-        pole = a * a;
-        obw = 4 * a;
+    Kwadrat(int bok) {
+        this.bok = bok;
+        this.pole = bok * bok;
+        this.obw = 4 * bok;
     }
 
     Kwadrat() {
@@ -14,8 +14,17 @@ public class Kwadrat {
     }
 
     void uzupelnijDane(int a) {
-        bok = a;
-        pole = a * a;
-        obw = 4 * a;
+        this.bok = a;
+        this.pole = a * a;
+        this.obw = 4 * a;
+    }
+
+    Kwadrat copy() {
+        Kwadrat copy = new Kwadrat();
+        copy.bok = this.bok;
+        copy.pole = this.pole;
+        copy.obw = this.obw;
+
+        return copy;
     }
 }
